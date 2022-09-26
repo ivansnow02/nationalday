@@ -11,10 +11,10 @@ public class Action {
         System.out.println("请稍等");
         Thread.sleep(1000);
         for (int i = 0; i < 10; i++) {
-            System.out.printf("*");
+            System.out.print("*");
             Thread.sleep(500);
         }
-        System.out.println("");
+        System.out.println();
         //加载界面
 
         if (month == 10 && day == 1) {
