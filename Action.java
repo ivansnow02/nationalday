@@ -1,6 +1,4 @@
 import java.util.Date;
-
-
 public class Action {
     public static void main(String[] args) throws InterruptedException {
         NationalDay nationalday = new NationalDay();
@@ -16,12 +14,12 @@ public class Action {
         }
         System.out.println();
         //加载界面
-
-        if (month == 10 && day == 1) {
+//
+//        if (month == 10 && day == 1) {
             nationalday.HappyNationalDay();//如果今天是国庆，则启动
-        }
-        else
-            System.out.println(nationalday.DaysToNationalDay(month, day));//输出据国庆还有几天
-            
+//        }
+//        else
+//            System.out.println(nationalday.DaysToNationalDay(month, day));//输出据国庆还有几天
+//
     }
 }
