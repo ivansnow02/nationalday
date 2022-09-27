@@ -18,7 +18,7 @@ public class WindowsN extends JFrame { // 取得屏幕的宽度
     class ImagePanel extends JPanel {
         public void paint(Graphics g) {//绘制图像
             super.paint(g);
-            ImageIcon icon = new ImageIcon("nationalday.gif");
+            ImageIcon icon = new ImageIcon("assets\\nationalday.gif");
             g.drawImage(icon.getImage(), 0, 0, width, height, this);
         }
     }
