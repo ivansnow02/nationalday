@@ -1,3 +1,6 @@
+package com.festival;
+
+import com.festival.window.WindowsC;
 public class ChongYang {
     final static int month = 10;
     final static int day = 4;

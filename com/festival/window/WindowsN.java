@@ -1,11 +1,17 @@
-import javax.swing.*;
-import java.awt.*;
+package com.festival.window;
+import java.awt.Graphics;
 
-public class WindowsC extends JFrame { // 取得屏幕的宽度
+import java.awt.Toolkit;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class WindowsN extends JFrame { // 取得屏幕的宽度
     int width = Toolkit.getDefaultToolkit().getScreenSize().width;// 取得屏幕的高度
     int height = Toolkit.getDefaultToolkit().getScreenSize().height - 50;
 
-    public void chongyangwindow() {
+    public void nationaldaywindow() {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(width, height);
         setResizable(false);//不可更改窗口大小
@@ -18,7 +24,7 @@ public class WindowsC extends JFrame { // 取得屏幕的宽度
     class ImagePanel extends JPanel {
         public void paint(Graphics g) {//绘制图像
             super.paint(g);
-            ImageIcon icon = new ImageIcon("assets/chongyang.gif");
+            ImageIcon icon = new ImageIcon("assets/nationalday.gif");
             g.drawImage(icon.getImage(), 0, 0, width, height, this);
         }
     }
