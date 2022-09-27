@@ -6,15 +6,12 @@ public class NationalDay {
         int MonthSub = month - Month;
         int DaySub = day - Day;
         int sub = MonthSub * 30 + DaySub;
-        if (sub < 0) {
-            return "距离国庆已经过了" + (-sub) + "天了哦";
-        } else
-            return "还有" + sub + "天才到国庆";
-
+        return "还有" + sub + "天才到国庆";
     }
 
     public void HappyNationalDay() {
         System.out.println("国庆快乐！");
-
+        WindowsN windows = new WindowsN();
+        windows.nationaldaywindow();
     }
 }
