@@ -1,6 +1,7 @@
 public class ChongYang {
     final static int month = 10;
     final static int day = 4;
+
     public String DaysToChongYang(int Month, int Day) {
         int MonthSub = month - Month;
         int DaySub = day - Day;

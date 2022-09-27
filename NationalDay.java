@@ -12,6 +12,6 @@ public class NationalDay {
     public void HappyNationalDay() {
         System.out.println("国庆快乐！");
         WindowsN windows = new WindowsN();
-        windows.windowsframe();
+        windows.nationaldaywindow();
     }
 }
