@@ -3,7 +3,7 @@ import java.util.Date;
 import com.festival.*;
 
 public class Action {
-    final static int[] LunarYear = new int[] { 4, 23, 11, 29, 18, 8, 26, 16, 5, 24 };// 未来10年的重阳节的日期
+    
 
     public static void main(String[] args) throws InterruptedException {
         NationalDay nationalday = new NationalDay();
@@ -25,8 +25,8 @@ public class Action {
                 nationalday.HappyNationalDay();// 如果今天是国庆，则启动弹窗
             else
                 System.out.println(nationalday.DaysToNationalDay(month, day));// 如果不是，输出据国庆还有几天
-        } else if (month == 10 && day <= LunarYear[year - 22]) {
-            if (day == LunarYear[year - 22])
+        } else if (month == 10 && day <= ChongYang.LunarYearDay[year - 22]) {
+            if (day == ChongYang.LunarYearDay[year - 22])
                 chongyang.HappyChongYang();// 如果今天是重阳，则启动弹窗
             else
                 System.out.println(chongyang.DaysToChongYang(month, day));// 如果不是，输出据重阳还有几天
