@@ -1,7 +1,6 @@
 package com.festival.window;
 
 import java.awt.Graphics;
-
 import java.awt.Toolkit;
 
 import javax.swing.ImageIcon;
